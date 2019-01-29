@@ -124,7 +124,7 @@ public class RecursionTest {
     @Test
     public void test19Reverse() {
         Recursion r = new Recursion();
-        assertEquals(r.reverse("<><"), "><>");
+        assertEquals(r.reverse("<><"), "<><");
     }
 
     @Test
