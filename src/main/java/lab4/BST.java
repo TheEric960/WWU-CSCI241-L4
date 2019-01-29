@@ -24,7 +24,11 @@ public class BST {
      * = 0 if n is null
      * = 1 + number of nodes in left + number of nodes in right */
     private int size(Node n) {
-        return 0; // TODO
+        if (n == null) {
+            return 0;
+        } else {
+            return 1 + size(n.left) + size(n.right);
+        }
     }
 
 
