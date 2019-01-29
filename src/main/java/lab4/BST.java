@@ -9,10 +9,10 @@ public class BST {
         root = null;
     }
 
-    /* return true iff Node n is a leaf node. a null node is not considered
+    /* return true if Node n is a leaf node. a null node is not considered
      * a leaf. */
     public boolean isLeaf(Node n) {
-        return false; //TODO
+        return n != null && n.left == null && n.right == null;
     }
 
     /** return the number of nodes in the tree */
