@@ -45,8 +45,7 @@ public class Recursion {
       }
       int s = n % 10;
 
-      // TODO: replace 0 with the correct recursive call:
-      return s + 0;
+      return s + sumDigs(n / 10);
   }
 
   /** = the reverse of s
