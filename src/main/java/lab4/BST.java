@@ -88,7 +88,18 @@ public class BST {
 
     /* return the height of the tree rooted at n */
     private int height(Node n) {
-        return 0; // TODO
+        if (n == null) {
+            return -1;
+        } else if (isLeaf(n)) {
+            return 0;
+        }
+
+        // want branch with greatest height
+        if (height(n.left) > height(n.right)) {
+            return 1 + height(n.left);
+        } else {
+            return 1 + height(n.right);
+        }
     }
 
     /** inner class representing a node in the tree. */
