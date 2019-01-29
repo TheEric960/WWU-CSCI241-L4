@@ -52,7 +52,10 @@ public class Recursion {
    * e.g. reverse("alp") => "pla"
    *      reverse("order") => "redro" */
   public static String reverse(String s) {
-      return ""; //TODO
+      if (s.length() == 0) {
+          return "";
+      }
+      return reverse(s.substring(1)) + s.charAt(0);
   }
 
   /** The following bonus problems are not required for Lab 3, but are good
