@@ -25,7 +25,12 @@ public class Recursion {
    *        countE(s[1:] otherwise
    */
   public static int countE(String s)  {
-      return 0; // TODO
+      if (s.length() == 0) {
+          return 0;
+      } else if (s.charAt(0) == 'e') {
+          return 1 + countE(s.substring(1));
+      }
+      return countE(s.substring(1));
   }
 
 
